@@ -1,0 +1,9 @@
+$main-color: #e76500;
+$background-color: #d8d8d8;
+$ground-color: #e4e4e4;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

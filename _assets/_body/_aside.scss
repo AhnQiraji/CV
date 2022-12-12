@@ -1,0 +1,36 @@
+aside {
+    grid-row: 2 / 6;
+    position: sticky;
+    top: 0px;
+    // top: calc(min(90vh, 45vw) + 30vh);
+    // left: 0;
+    display: inline-flex;
+    flex-direction: column;
+    // width: 30vh;
+    // height: 90vh;
+    align-self: start;
+
+    .portrait {
+        height: 30vh;
+        background-image: url(../pics/billy2.jpg);
+        background-size: 45vh 50vh;
+        background-position: top left 50%;
+        filter: grayscale(0.8);
+    }
+
+    .map {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $main-color;
+        width: 30vh;
+        height: 60vh;
+
+        div {
+            display: flex;
+            align-items: center;
+            height: 10vh;
+        }
+    }
+}

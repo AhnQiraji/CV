@@ -1,0 +1,45 @@
+nav {
+    position: fixed;
+    right: 2.5vw;
+    top: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    border-radius: 1.5rem;
+    z-index: 1;
+    background-color: $main-color;
+
+    >* {
+        width: 2rem;
+        height: 2rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .homeico {
+        background-image: url(../pics/homeico.png);
+        scale: 1.05;
+    }
+
+    .aboutico {
+        background-image: url(../pics/aboutico2.png);
+        scale: 1.4;
+    }
+
+    .resumeico {
+        background-image: url(../pics/resumeico.png);
+        scale: 1.2;
+    }
+
+    .portfolioico {
+        background-image: url(../pics/portfolioico.png);
+    }
+
+    .contactsico {
+        background-image: url(../pics/contactsico.png);
+    }
+}
