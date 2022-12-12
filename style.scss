@@ -4,35 +4,43 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
+    padding: 5vh 5vw;
+    overflow-x: hidden;
+    height: 500vh;
     background-color: $background-color;
+    
+    @import '_assets/_body/nav';
 }
 
 .body {
-    display: grid;
-    grid-template-columns: 30vh 1fr;
-    // row-gap: 10vh;
-    margin: 5vh 5vw;
-    overflow-y: auto;
-    box-shadow: 0 0 1.25rem black;
-    
-    @import '_assets/_body/nav';
-    @import '_assets/_body/home';
-    @import '_assets/_body/aside';
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+    // overflow-y: hidden;
+
+    >div {
+        box-shadow: 0 0 1.25rem black;
+    }
 
     .about, .resume, .portfolio, .conact {
         padding: 10vh 10vw;
         height: 90vh;
+        margin-left: 30vh;
         // position: relative;
         // left: 30vh;
         // margin-left: 30vh;
         // width: calc(100% - 30vh);
     }
 
+    @import '_assets/_body/home';
+    @import '_assets/_body/aside';
     @import '_assets/_body/about';
     @import '_assets/_body/resume';
+    @import '_assets/_body/portfolio';
 }
 
 

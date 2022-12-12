@@ -1,17 +1,11 @@
 aside {
-    grid-row: 2 / 6;
-    position: sticky;
+    position: fixed;
     top: 0px;
-    // top: calc(min(90vh, 45vw) + 30vh);
-    // left: 0;
     display: inline-flex;
     flex-direction: column;
-    // width: 30vh;
-    // height: 90vh;
-    align-self: start;
 
     .portrait {
-        height: 30vh;
+        height: 35vh;
         background-image: url(../pics/billy2.jpg);
         background-size: 45vh 50vh;
         background-position: top left 50%;
@@ -25,12 +19,26 @@ aside {
         align-items: center;
         background-color: $main-color;
         width: 30vh;
-        height: 60vh;
+        height: 65vh;
 
-        div {
+        a {
             display: flex;
             align-items: center;
+            justify-content: center;
             height: 10vh;
+            text-decoration: none;
+            color: black;
+
+            &:visited {
+                color: black;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-image: url(../pics/spot.svg);
+                background-size: cover;
+                background-position: 50% 50%;
+            }
         }
     }
 }

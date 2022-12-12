@@ -1,6 +1,7 @@
 nav {
     position: fixed;
-    right: 2.5vw;
+    right: calc(5vw - 2rem - 10px);
+    // right: 0;
     top: 25vh;
     display: flex;
     justify-content: space-around;
@@ -9,8 +10,8 @@ nav {
     flex-direction: column;
     padding: 0 0.5rem;
     border-radius: 1.5rem;
-    z-index: 1;
     background-color: $main-color;
+    z-index: 2;
 
     >* {
         width: 2rem;

@@ -8,16 +8,16 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <nav>
+        <div class="homeico"></div>
+        <div class="aboutico"></div>
+        <div class="resumeico"></div>
+        <div class="portfolioico"></div>
+        <div class="contactsico"></div>
+    </nav> -->
+
     <div class="body">
-        <nav>
-            <div class="homeico"></div>
-            <div class="aboutico"></div>
-            <div class="resumeico"></div>
-            <div class="portfolioico"></div>
-            <div class="contactsico"></div>
-        </nav>
-    
-        <div class="home">
+        <div class="home" id="home">
             <div class="greetings">
                 <h2>HELLO THERE!</h2>
                 <h1>I'M <span class="main-color">BILLY</span></h1>
@@ -28,21 +28,45 @@
         <aside>
             <div class="portrait"></div>
             <div class="map">
-                <div>HOME</div>
-                <div>ABOUT ME</div>
-                <div>RESUME</div>
-                <div>PORTFOLIO</div>
-                <div>CONTACTS</div>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT ME</a>
+                <a href="#resume">RESUME</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contacts">CONTACTS</a>
             </div>
         </aside>
-        <div class="about">
+        <div class="about" id="about">
             <h1>ABOUT ME</h1>
             <h3 class="thin">I'm <span class="bold">Billy Herrington,</span> Front-End Developer</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur sit beatae doloremque magnam odit, odio obcaecati, nemo perspiciatis eligendi, quae quidem possimus est hic minima ratione at ad asperiores.</p>
         </div>
-        <div class="resume">
-            
+        <div class="resume" id="resume">
+            <h1>RESUME</h1>
+            <h2>EDUCATION</h2>
+            <div class="education">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor officiis porro eos tempora ab corrupti earum?</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor officiis porro eos tempora ab corrupti earum?</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor officiis porro eos tempora ab corrupti earum?</span>
+            </div>
+            <hr>
+            <h2>EXPIRIENCE</h2>
+            <div class="expirience">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor officiis porro eos tempora ab corrupti earum?</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor officiis porro eos tempora ab corrupti earum?</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor officiis porro eos tempora ab corrupti earum?</span>
+            </div>
         </div>
+        <div class="portfolio" id="portfolio">
+            <h1>PORTFOLIO</h1>
+            <div class="links">
+                <a href="https://ahnqiraji.github.io/Chat-draft/" target="iframe">Chat Sketch</a>
+                <a href="https://ahnqiraji.github.io/Note-list/" target="iframe">Note list</a>
+                <a href="https://ahnqiraji.github.io/Uploading/" target="iframe">Uploading</a>
+                <a href="https://ahnqiraji.github.io/mailbox/" target="iframe">Mailbox</a>
+            </div>
+            <iframe src="https://ahnqiraji.github.io/Chat-draft/" frameborder="0" name="iframe" seamless></iframe>
+        </div>
+
     </div>
 </body>
 </html>

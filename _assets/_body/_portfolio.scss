@@ -1,0 +1,37 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+        border: 2px dotted black;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-size: 1rem;
+            font-weight: 900;
+            text-decoration: none;
+            color: black;
+
+            &:visited {
+                color: black;
+            }
+        }
+    }
+
+    iframe {
+        position: absolute;
+        top: 333vh;
+        left: 7vw;
+        height: 75vh;
+        width: 100vw;
+        border-radius: 3rem;
+        scale: 0.6;
+    }
+}
