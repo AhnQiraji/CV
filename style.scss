@@ -24,6 +24,7 @@ body {
 
     >div {
         box-shadow: 0 0 1.25rem black;
+        overflow-x: hidden;
     }
 
     .about, .resume, .contacts {

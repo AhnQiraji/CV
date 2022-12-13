@@ -29,14 +29,17 @@ aside {
             height: 10vh;
             text-decoration: none;
             color: black;
+            width: 10rem;
 
             &:visited {
                 color: black;
             }
 
             &:hover {
-                background-image: url(../pics/spot.svg);
-                background-size: cover;
+                // background-image: url(../pics/spot.svg);
+                background-image: url(../pics/spot2.png);
+                background-size: contain;
+                background-repeat: no-repeat;
                 background-position: 50% 50%;
             }
         }

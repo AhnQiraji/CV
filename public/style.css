@@ -79,6 +79,7 @@ body {
 }
 .body > div {
   box-shadow: 0 0 1.25rem black;
+  overflow-x: hidden;
 }
 .body .about, .body .resume, .body .contacts {
   padding: 10vh 10vw;
@@ -160,13 +161,15 @@ body {
   height: 10vh;
   text-decoration: none;
   color: black;
+  width: 10rem;
 }
 .body aside .map a:visited {
   color: black;
 }
 .body aside .map a:hover {
-  background-image: url(../pics/spot.svg);
-  background-size: cover;
+  background-image: url(../pics/spot2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .body .about {
@@ -181,6 +184,9 @@ body {
 }
 .body .about h3 {
   font-size: 1.5rem;
+}
+.body .about .gym {
+  background-image: url();
 }
 .body .resume {
   display: flex;
@@ -272,17 +278,14 @@ body {
   align-items: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
-  margin: min(3vh, 3vw);
+  margin: min(1vh, 1vw);
 }
 .body .contacts > div > div div {
-  width: min(15vh, 15vw);
-  height: min(15vh, 15vw);
+  width: min(20vh, 20vw);
+  height: min(20vh, 20vw);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-.body .contacts > div > div:hover div {
-  scale: 1.2;
 }
 .body .contacts > div > div .phoneico {
   background-image: url(../pics/contacts.png);
@@ -299,12 +302,19 @@ body {
   width: min(7vh, 7vw);
   height: min(7vh, 7vw);
   margin: 0;
+  border-radius: 0.75rem;
+}
+.body .contacts .media div .githubico {
+  background-image: url(../pics/githubico.png);
 }
 .body .contacts .media div .linkedinico {
   background-image: url(../pics/linkedinico.png);
 }
 .body .contacts .media div .facebookico {
   background-image: url(../pics/facebookico.png);
+}
+.body .contacts .media div:hover {
+  scale: 1.2;
 }
 
 .main-color {
