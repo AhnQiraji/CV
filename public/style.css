@@ -42,7 +42,7 @@ input, button, textarea, select {
 
 @font-face {
   font-family: "OldNewspaper";
-  src: url("../_assets/fonts/OldNewspaper.ttf") format("truetype");
+  src: url("../_assets/fonts/OldNewspaper.woff") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -269,8 +269,7 @@ body {
 }
 .body .contacts > div {
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: space-around;
 }
 .body .contacts > div > div {
   display: flex;
