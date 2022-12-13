@@ -1,6 +1,7 @@
 @import '_assets/reset';
 @import '_assets/fonts';
 @import '_assets/vars';
+@import '_assets/scrollbar';
 
 html {
     font-size: 16px;
@@ -13,27 +14,22 @@ body {
     height: 500vh;
     background-color: $background-color;
     
-    @import '_assets/_body/nav';
+    // @import '_assets/_body/nav';
 }
 
 .body {
     display: flex;
     flex-direction: column;
     row-gap: 10vh;
-    // overflow-y: hidden;
 
     >div {
         box-shadow: 0 0 1.25rem black;
     }
 
-    .about, .resume, .portfolio, .conact {
+    .about, .resume, .contacts {
         padding: 10vh 10vw;
         height: 90vh;
-        margin-left: 30vh;
-        // position: relative;
-        // left: 30vh;
-        // margin-left: 30vh;
-        // width: calc(100% - 30vh);
+        margin-left: 18vw;
     }
 
     @import '_assets/_body/home';
@@ -41,6 +37,7 @@ body {
     @import '_assets/_body/about';
     @import '_assets/_body/resume';
     @import '_assets/_body/portfolio';
+    @import '_assets/_body/contacts';
 }
 
 

@@ -7,3 +7,9 @@ $ground-color: #e4e4e4;
     justify-content: center;
     align-items: center;
 }
+
+@mixin title {
+    text-align: center;
+    font-size: 5rem;
+    border: 2px dotted black;
+}

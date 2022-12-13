@@ -50,6 +50,16 @@ input, button, textarea, select {
   font-family: "OldNewspaper";
 }
 
+::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e76500;
+  border: 0.25rem solid #d8d8d8;
+  border-radius: 0.75rem;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -61,45 +71,6 @@ body {
   height: 500vh;
   background-color: #d8d8d8;
 }
-body nav {
-  position: fixed;
-  right: calc(5vw - 2rem - 10px);
-  top: 25vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50vh;
-  flex-direction: column;
-  padding: 0 0.5rem;
-  border-radius: 1.5rem;
-  background-color: #e76500;
-  z-index: 2;
-}
-body nav > * {
-  width: 2rem;
-  height: 2rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-body nav .homeico {
-  background-image: url(../pics/homeico.png);
-  scale: 1.05;
-}
-body nav .aboutico {
-  background-image: url(../pics/aboutico2.png);
-  scale: 1.4;
-}
-body nav .resumeico {
-  background-image: url(../pics/resumeico.png);
-  scale: 1.2;
-}
-body nav .portfolioico {
-  background-image: url(../pics/portfolioico.png);
-}
-body nav .contactsico {
-  background-image: url(../pics/contactsico.png);
-}
 
 .body {
   display: flex;
@@ -109,10 +80,10 @@ body nav .contactsico {
 .body > div {
   box-shadow: 0 0 1.25rem black;
 }
-.body .about, .body .resume, .body .portfolio, .body .conact {
+.body .about, .body .resume, .body .contacts {
   padding: 10vh 10vw;
   height: 90vh;
-  margin-left: 30vh;
+  margin-left: 18vw;
 }
 .body .home {
   display: flex;
@@ -122,33 +93,41 @@ body nav .contactsico {
   z-index: 1;
 }
 .body .home .greetings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.body .home .greetings div {
   position: relative;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 21.25rem;
 }
-.body .home .greetings h2 {
+.body .home .greetings div h2 {
   font-size: 2rem;
 }
-.body .home .greetings h1 {
+.body .home .greetings div h1 {
   font-size: 4rem;
 }
-.body .home .greetings h4 {
+.body .home .greetings div h4 {
   font-size: 1.25rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 0.25rem;
 }
+.body .home .greetings div p {
+  margin-top: 2rem;
+}
 .body .home .portrait {
-  width: 90vh;
+  width: 45vw;
   height: 90vh;
   background-image: url(../pics/billy.jpg);
-  background-size: 108vh;
+  background-size: max(108vh, 54vw);
   background-repeat: no-repeat;
-  background-position: top right 50%;
+  background-position: top left 30%;
   filter: grayscale(0.7);
 }
 .body aside {
@@ -160,8 +139,9 @@ body nav .contactsico {
 .body aside .portrait {
   height: 35vh;
   background-image: url(../pics/billy2.jpg);
-  background-size: 45vh 50vh;
+  background-size: max(42vh, 15.3vw) max(49.5vh, 18vw);
   background-position: top left 50%;
+  background-repeat: no-repeat;
   filter: grayscale(0.8);
 }
 .body aside .map {
@@ -170,7 +150,7 @@ body nav .contactsico {
   justify-content: center;
   align-items: center;
   background-color: #e76500;
-  width: 30vh;
+  width: 18vw;
   height: 65vh;
 }
 .body aside .map a {
@@ -185,7 +165,6 @@ body nav .contactsico {
   color: black;
 }
 .body aside .map a:hover {
-  cursor: pointer;
   background-image: url(../pics/spot.svg);
   background-size: cover;
   background-position: 50% 50%;
@@ -234,19 +213,23 @@ body nav .contactsico {
 .body .portfolio {
   display: flex;
   flex-direction: column;
-  row-gap: 5vh;
+  justify-content: space-evenly;
+  height: 90vh;
+  margin-left: 18vw;
 }
 .body .portfolio h1 {
   text-align: center;
   font-size: 5rem;
   border: 2px dotted black;
+  margin: 0 8vw;
 }
 .body .portfolio .links {
   display: flex;
   justify-content: space-between;
+  margin: 0 8vw;
 }
 .body .portfolio .links a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 900;
   text-decoration: none;
   color: black;
@@ -254,14 +237,74 @@ body nav .contactsico {
 .body .portfolio .links a:visited {
   color: black;
 }
+.body .portfolio .links a:hover {
+  background-image: url(../pics/spot.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
 .body .portfolio iframe {
-  position: absolute;
-  top: 333vh;
-  left: 7vw;
-  height: 75vh;
-  width: 100vw;
+  height: 50vh;
+  width: 60vw;
   border-radius: 3rem;
-  scale: 0.6;
+  align-self: center;
+}
+.body .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.body .contacts h1 {
+  text-align: center;
+  font-size: 5rem;
+  border: 2px dotted black;
+}
+.body .contacts h2 {
+  text-align: center;
+}
+.body .contacts > div {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.body .contacts > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  margin: min(3vh, 3vw);
+}
+.body .contacts > div > div div {
+  width: min(15vh, 15vw);
+  height: min(15vh, 15vw);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body .contacts > div > div:hover div {
+  scale: 1.2;
+}
+.body .contacts > div > div .phoneico {
+  background-image: url(../pics/contacts.png);
+}
+.body .contacts > div > div .emailico {
+  background-image: url(../pics/emailico.png);
+}
+.body .contacts .media {
+  justify-content: end;
+  -moz-column-gap: min(2vh, 2vw);
+       column-gap: min(2vh, 2vw);
+}
+.body .contacts .media div {
+  width: min(7vh, 7vw);
+  height: min(7vh, 7vw);
+  margin: 0;
+}
+.body .contacts .media div .linkedinico {
+  background-image: url(../pics/linkedinico.png);
+}
+.body .contacts .media div .facebookico {
+  background-image: url(../pics/facebookico.png);
 }
 
 .main-color {

@@ -1,20 +1,22 @@
 .portfolio {
     display: flex;
     flex-direction: column;
-    row-gap: 5vh;
+    justify-content: space-evenly;
+    height: 90vh;
+    margin-left: 18vw;
 
     h1 {
-        text-align: center;
-        font-size: 5rem;
-        border: 2px dotted black;
+        @include title;
+        margin: 0 8vw;
     }
     
     .links {
         display: flex;
         justify-content: space-between;
+        margin: 0 8vw;
 
         a {
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: 900;
             text-decoration: none;
             color: black;
@@ -22,16 +24,19 @@
             &:visited {
                 color: black;
             }
+
+            &:hover {
+                background-image: url(../pics/spot.svg);
+                background-size: cover;
+                background-position: 50% 50%;
+            }
         }
     }
 
     iframe {
-        position: absolute;
-        top: 333vh;
-        left: 7vw;
-        height: 75vh;
-        width: 100vw;
+        height: 50vh;
+        width: 60vw;
         border-radius: 3rem;
-        scale: 0.6;
+        align-self: center;
     }
 }
