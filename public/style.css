@@ -10,7 +10,7 @@ ul[class], ol[class] {
 }
 
 /* Убираем внешние отступы */
-body, h1, h2, h3, h4, p, ul[class], l[class], li, figure, figcaption, blockquote, dl, dd {
+body, h1, h2, h3, h4, p, hr, ul[class], l[class], li, figure, figcaption, blockquote, dl, dd {
   margin: 0;
 }
 
@@ -140,7 +140,7 @@ body {
 .body aside .portrait {
   height: 35vh;
   background-image: url(../pics/billy2.jpg);
-  background-size: max(42vh, 15.3vw) max(49.5vh, 18vw);
+  background-size: max(42vh, 15.3vw);
   background-position: top left 50%;
   background-repeat: no-repeat;
   filter: grayscale(0.8);
@@ -185,8 +185,42 @@ body {
 .body .about h3 {
   font-size: 1.5rem;
 }
-.body .about .gym {
-  background-image: url();
+.body .about .hobbies {
+  display: flex;
+  justify-content: space-between;
+}
+.body .about .hobbies > div {
+  height: 25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.body .about .hobbies > div:hover {
+  scale: 2;
+  transition: scale 0.5s linear, translate 0.5s linear;
+}
+.body .about .hobbies .gym {
+  width: 17vh;
+  background-image: url(../pics/gym.png);
+}
+.body .about .hobbies .gym:hover {
+  scale: 2;
+  translate: 8.5vh -12.5vh;
+}
+.body .about .hobbies .byke {
+  width: 25vh;
+  background-image: url(../pics/byking.webp);
+}
+.body .about .hobbies .byke:hover {
+  scale: 2;
+  translate: 0 -12.4vh;
+}
+.body .about .hobbies .bar {
+  width: 34.5vh;
+  background-image: url(../pics/bar.jpg);
+}
+.body .about .hobbies .bar:hover {
+  scale: 2;
+  translate: -17.25vh -12.4vh;
 }
 .body .resume {
   display: flex;
@@ -207,14 +241,38 @@ body {
   -moz-column-gap: 2vw;
        column-gap: 2vw;
 }
-.body .resume > div span {
-  font-size: 0.75rem;
-}
 .body .resume hr {
   width: 100%;
   height: 1px;
   background-color: black;
   border: none;
+}
+.body .resume .expirience {
+  display: flex;
+  justify-content: space-between;
+}
+.body .resume .expirience div {
+  height: 10vh;
+  width: 10vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body .resume .expirience .css {
+  background-image: url(../pics/cssico.png);
+  width: 20vh;
+}
+.body .resume .expirience .sass {
+  background-image: url(../pics/sassico.png);
+}
+.body .resume .expirience .git {
+  background-image: url(../pics/gitico.png);
+}
+.body .resume .expirience .github {
+  background-image: url(../pics/githubico.png);
+}
+.body .resume .expirience a:hover {
+  cursor: default;
 }
 .body .portfolio {
   display: flex;
@@ -239,14 +297,13 @@ body {
   font-weight: 900;
   text-decoration: none;
   color: black;
+  padding: 1rem;
 }
 .body .portfolio .links a:visited {
   color: black;
 }
 .body .portfolio .links a:hover {
-  background-image: url(../pics/spot.svg);
-  background-size: cover;
-  background-position: 50% 50%;
+  color: #e76500;
 }
 .body .portfolio iframe {
   height: 50vh;

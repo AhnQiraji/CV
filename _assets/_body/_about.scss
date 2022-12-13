@@ -11,12 +11,54 @@
         font-size: 1.5rem;
     }
 
-    // .hobbies {
-    //     display: grid;
-    //     grid-template-columns: repeat(3, 17vw);
-    // }
+    .hobbies {
+        display: flex;
+        justify-content: space-between;
 
-    .gym {
-        background-image: url();
+        >div {
+            height: 25vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            // background-position: left bottom;
+
+            &:hover {
+                scale: 2;
+                transition: scale 0.5s linear, translate 0.5s linear;
+            }
+        }
+
+        .gym {
+            width: 17vh;
+            background-image: url(../pics/gym.png);
+
+            &:hover {
+                scale: 2;
+                translate: 8.5vh -12.5vh;
+            }
+        }
+
+        .byke {
+            width: 25vh;
+            background-image: url(../pics/byking.webp);
+
+            &:hover {
+                scale: 2;
+                translate: 0 -12.4vh;
+            }
+
+        }
+
+        .bar {
+            width: 34.5vh;
+            background-image: url(../pics/bar.jpg);
+
+            &:hover {
+                scale: 2;
+                translate: -17.25vh -12.4vh;
+            }
+
+        }
+
+
     }
 }

@@ -15,10 +15,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2vw;
-
-        span {
-            font-size: 0.75rem;
-        }
     }
 
     hr {
@@ -26,5 +22,42 @@
         height: 1px;
         background-color: black;
         border: none;
+    }
+
+    .expirience {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            height: 10vh;
+            width: 10vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        .css {
+            background-image: url(../pics/cssico.png);
+            width: 20vh;
+        }
+    
+        .sass {
+            background-image: url(../pics/sassico.png);
+        }
+    
+        .git {
+            background-image: url(../pics/gitico.png);
+        }
+    
+        .github {
+            background-image: url(../pics/githubico.png);  
+        }
+
+        a {
+
+            &:hover {
+                cursor: default;
+            }
+        }
     }
 }

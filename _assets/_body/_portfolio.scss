@@ -20,15 +20,14 @@
             font-weight: 900;
             text-decoration: none;
             color: black;
+            padding: 1rem;
 
             &:visited {
                 color: black;
             }
 
             &:hover {
-                background-image: url(../pics/spot.svg);
-                background-size: cover;
-                background-position: 50% 50%;
+                color: $main-color;
             }
         }
     }
