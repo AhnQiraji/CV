@@ -79,7 +79,7 @@ body {
 }
 .body > div {
   box-shadow: 0 0 1.25rem black;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .body .about, .body .resume, .body .contacts {
   padding: 10vh 10vw;
@@ -193,6 +193,7 @@ body {
   height: 25vh;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: left 50% bottom;
 }
 .body .about .hobbies > div:hover {
   scale: 2;
@@ -298,6 +299,9 @@ body {
   text-decoration: none;
   color: black;
   padding: 1rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .body .portfolio .links a:visited {
   color: black;
@@ -387,4 +391,15 @@ body {
 
 .bold {
   font-weight: 900;
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 920px) {
+  html {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
