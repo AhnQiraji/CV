@@ -1,7 +1,17 @@
 @import '_assets/reset';
-@import '_assets/fonts';
 @import '_assets/vars';
 @import '_assets/scrollbar';
+
+@font-face {
+    font-family: "OldNewspaper"; 
+    src: url("../_assets/fonts/OldNewspaper.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+* {
+    font-family: "OldNewspaper";
+}
 
 html {
     font-size: 16px;

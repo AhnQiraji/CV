@@ -40,16 +40,6 @@ input, button, textarea, select {
   font: inherit;
 }
 
-@font-face {
-  font-family: "OldNewspaper";
-  src: url("../_assets/fonts/OldNewspaper.woff") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-* {
-  font-family: "OldNewspaper";
-}
-
 ::-webkit-scrollbar {
   width: 0.75rem;
   height: 0.75rem;
@@ -58,6 +48,16 @@ input, button, textarea, select {
   background-color: #e76500;
   border: 0.25rem solid #d8d8d8;
   border-radius: 0.75rem;
+}
+
+@font-face {
+  font-family: "OldNewspaper";
+  src: url("../_assets/fonts/OldNewspaper.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  font-family: "OldNewspaper";
 }
 
 html {
